@@ -1,0 +1,106 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginTitle {
+    font-size: 50px;
+    margin-left: 400px;
+    margin-bottom: 20px; /* Combined margin-bottom from the new styles */
+}
+
+.loginForm {
+    margin-top: 20px;
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginFormLable {
+    margin: 10px 0;
+}
+
+.loginInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 20px; /* Added border-radius for rounded edges */
+    outline: none; /* Removes the default outline */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for depth */
+}
+
+
+/* Enhancing the Login Button */
+.loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #ff7f50; /* Vibrant coral color */
+    border: none;
+    color: white;
+    border-radius: 20px; /* Rounded button */
+    padding: 15px 30px; /* Larger button */
+    font-size: 18px; /* Increased font size */
+    font-weight: bold; /* Bold font */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.loginButton:hover {
+    background-color: #ff6347; /* Darker coral on hover */
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+.loginRegisterButton {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    background-color: teal;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 15px; /* Combined with new styles */
+}
+
+.l1 {
+    text-decoration: none;
+    color: white;
+}
+
+/* Enhancing the Google Sign-In Button */
+.loginGoogleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid #4285f4; /* Google blue border */
+    border-radius: 20px; /* Rounded button */
+    padding: 15px 30px; /* Larger button */
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 18px; /* Increased font size */
+    font-weight: bold; /* Bold font */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin-left: 400px;
+}
+
+.loginGoogleButton:hover {
+    background-color: #e8f0fe; /* Light blue background on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+/* Google Logo */
+.googleLogo {
+    width: 24px; /* Slightly larger logo */
+    height: 24px;
+    margin-right: 10px;
+}

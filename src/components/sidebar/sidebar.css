@@ -1,0 +1,121 @@
+/* General sidebar styling */
+.sidebar {
+    float: right;
+    margin-right: 5%;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 80%; /* Increased width for a more substantial appearance */
+}
+
+.sidebar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar item styling */
+.sidebarItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px; /* Increased spacing between items */
+    position: relative;
+    width: 100%;
+}
+
+.sidebarTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; /* Slightly larger font for prominence */
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px; /* Increased spacing below the title */
+    padding: 15px; /* More padding for a substantial look */
+    width: 100%;
+    border-bottom: 2px solid #007bff;
+    background: linear-gradient(to right, #007bff, #00bfff);
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sidebarTitle:hover {
+    background: linear-gradient(to right, #00bfff, #007bff);
+    color: #fff;
+}
+
+/* Image styling */
+.i1 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px; /* Increased margin for better spacing */
+    transition: transform 0.3s ease-in-out;
+}
+
+.i1:hover {
+    transform: scale(1.05);
+}
+
+/* Paragraph styling */
+.sidebarItem > p {
+    font-size: 18px; /* Slightly larger text for better readability */
+    color: #555;
+    line-height: 1.8; /* Increased line height for better spacing */
+    padding: 20px; /* More padding for a spacious feel */
+    text-align: center;
+}
+
+/* List styling */
+.sidebarList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebarListItem {
+    display: block;
+    width: 100%;
+    margin: 15px 0; /* Increased margin for better spacing */
+    cursor: pointer;
+    font-size: 18px; /* Slightly larger font size */
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebarListItem:hover {
+    color: #0056b3;
+    font-weight: 600;
+}
+
+/* Social icons styling */
+.sidebarSocial {
+    margin-top: 30px; /* Increased margin for better spacing */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Increased gap between icons */
+}
+
+.sidebarIcon {
+    font-size: 26px; /* Slightly larger icons */
+    color: #333;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.sidebarIcon:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}

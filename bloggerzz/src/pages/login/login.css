@@ -1,0 +1,82 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginTitle {
+    font-size: 50px;
+    margin-left: 400px;
+}
+
+.loginForm {
+    margin-top: 20px;
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginFormLable {
+    margin: 10px 0;
+}
+
+.loginInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.loginRegisterButton {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    background-color: teal;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.l1 {
+    text-decoration: none;
+    color: white;
+}
+
+.googleLogin {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.googleButton {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.googleButton:hover {
+    background-color: #357ae8;
+}

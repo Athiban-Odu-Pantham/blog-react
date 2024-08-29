@@ -1,0 +1,88 @@
+.postImg {
+    background-image: url("bg1.jpg");
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    transition: transform 0.3s ease;
+}
+
+.postImg:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.post {
+    width: 385px;
+    margin: 0px 25px 40px 25px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.postInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postCat {
+    font-family: "Varela Round", sans-serif;
+    font-size: 11px;
+    color: #be9656;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.postTitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none; /* Remove underline */
+}
+
+.postTitle:hover {
+    color: #be9656; /* Change color on hover */
+}
+
+.postDate {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #999;
+    margin-top: 15px;
+}
+
+.postDesc {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.l5 {
+    color: black;
+    text-decoration: none; /* Remove underline */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.l5:hover {
+    color: #be9656; /* Change color on hover */
+}

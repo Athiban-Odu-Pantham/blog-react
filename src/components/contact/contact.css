@@ -1,0 +1,63 @@
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 30px;
+    height: auto;
+    width: 480px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact {
+    background-color: rgb(141, 241, 241);
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e1 {
+    margin-top: 20px;
+}
+
+.loginInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.area {
+    resize: vertical;
+    height: 150px;
+}
+
+.send {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.send:hover {
+    background-color: #0056b3;
+}

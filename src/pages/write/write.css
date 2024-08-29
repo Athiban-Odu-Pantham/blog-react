@@ -1,0 +1,165 @@
+/* Main container for the write section */
+.write {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect on the main container */
+.write:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Form container with advanced styling */
+.writeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: formSlideIn 1s ease-out;
+}
+
+/* Group of form elements with flex alignment */
+.writeFormGroup {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Icon styling with neumorphic effect */
+.writeIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #007BFF;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #007BFF;
+    cursor: pointer;
+    transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.9);
+    position: relative;
+}
+
+.writeIcon:hover {
+    background: #007BFF;
+    color: #ffffff;
+    transform: translateY(-5px) rotate(10deg);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.8);
+}
+
+.writeIcon:before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.2), transparent);
+    top: -30%;
+    left: -30%;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.writeIcon:hover:before {
+    opacity: 1;
+}
+
+/* Input field styling with smooth shadow and border effects */
+.writeInput {
+    font-size: 18px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 12px;
+    width: 100%;
+    background: #ffffff;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.writeInput:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5), inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Text area with enhanced shadow and 3D effect */
+.writeText {
+    height: 300px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    resize: none;
+    background: #ffffff;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.writeText:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5), inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit button with gradient and 3D effects */
+.writeSubmit {
+    color: #ffffff;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    padding: 14px 22px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.writeSubmit:hover {
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    transform: translateY(-4px);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .writeFormGroup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .writeInput, .writeText {
+        width: 100%;
+    }
+
+    .writeSubmit {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Keyframe animations */
+@keyframes formSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

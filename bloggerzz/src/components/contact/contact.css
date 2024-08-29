@@ -1,0 +1,30 @@
+.box{
+    margin-left: 500px;
+    margin-top: 30px;
+    height: 540px;
+    width: 520px;
+}
+.title{
+    font-size:34px ;
+    font-weight: 600;
+    margin-left: 180px;
+}
+.contact{
+    background-color: rgb(141, 241, 241);
+    height: calc(100vh - 50px);
+
+}
+.e1{
+    margin-top: 60px;
+    margin-left: 70px;
+}
+.area{
+    resize: both;
+    height: 180px;
+    width: 350px;
+}
+.send{
+    margin-top: 30px;
+    padding-left: 250px;
+    padding-right: 240px;
+}

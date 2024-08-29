@@ -1,0 +1,27 @@
+.header{
+    margin-top: 60px;
+    background-image: url('bg1.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    color: white; 
+}
+.headerTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lora',serif;
+    color: #444;
+    font-weight: 400;
+}
+.headerTitleSm{
+    position: absolute;
+    font-size: 20px;
+}
+.headerTitleLg{
+    position: absolute;
+    top: 20%;
+    font-size: 60px;
+}

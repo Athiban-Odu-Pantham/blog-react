@@ -1,0 +1,5 @@
+sidebar -> about me,category,follow us
+postjsx -> postimage , post text etc..
+https://www.youtube.com/watch?v=tlTdbc5byAs
+37:12
+1:22:15
